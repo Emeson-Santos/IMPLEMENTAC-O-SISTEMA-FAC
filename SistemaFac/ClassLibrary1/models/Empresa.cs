@@ -13,23 +13,6 @@ using System.Text;
     {
 
         /**
-         * id
-         * razaoSocial
-         * rua 
-         * bairro
-         * cep
-         * numero
-         * cidade
-         * uf
-         * telefone
-         * email
-         * imagem
-         * eventosFornecidos
-         * login
-         * senha
-         * isPrestadorServico
-         * receberFeedback
-         * receberListaPresentes
          * 
          * 
          */
@@ -51,97 +34,173 @@ using System.Text;
         private List<Feedback> receberFeedback;
         private List<ListaPresentes> receberListaPresentes;
     
-    public Empresa(string razaoSocial = null, string rua = null, string bairro)
+    public Empresa(int id, string razaoSocial)
         {
+            this.id = id;
+            this.razaoSocial = razaoSocial;
+           
+        }
+        public Empresa(string razaoSocial)
+        {
+            this.razaoSocial = razaoSocial;
+        }
+        public Empresa() : this(0,null)
+        {
+            
+        }
+        /**
+         * 
+         */
+        public int Id
+        {
+            get { return id; }
+            set { id = value;}
         }
 
         /**
          * 
          */
-        public int Id;
+        public string RazaoSocial
+        {
+            get { return razaoSocial; }
+            set { razaoSocial = value; }
+        }
 
         /**
          * 
          */
-        public string RazaoSocial;
+        public string Rua
+        {
+            get { return razaoSocial; }
+            set { razaoSocial = value; }
+        }
 
         /**
          * 
          */
-        public string Rua;
+        public string Bairro
+        {
+            get { return bairro; }
+            set { bairro = value; }
+        }
 
         /**
          * 
          */
-        public string Bairro;
+        public int Cep
+        {
+            get { return cep; }
+            set { cep = value; }
+
+        }
 
         /**
          * 
          */
-        public int Cep;
+        public int Numero
+        {
+            get { return numero; }
+            set { numero = value; }
+        }
 
         /**
          * 
          */
-        public int Numero;
+        public string Cidade
+        {
+            get { return cidade; }
+            set { cidade = value; }
+        }
+            
+        /**
+         * 
+         */
+        public string UF
+        {
+            get { return uf; }
+            set { uf = value; }
+        }
 
         /**
          * 
          */
-        public string Cidade;
+        public int Telefone
+        {
+            get { return telefone; }
+            set { telefone = value; }
+        }
 
         /**
          * 
          */
-        public string UF;
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
 
         /**
          * 
          */
-        public int Telefone;
+        public byte Imagem
+        {
+            get { return imagem; }
+            set { imagem = value; }
+        }
 
         /**
          * 
          */
-        public string Email;
+        public List<TipoEvento> EventosFornecidos
+        {
+            get { return eventosFornecidos; }
+            set { eventosFornecidos = value; }
+        }
 
         /**
          * 
          */
-        public byte Imagem;
+        public string Login
+        {
+            get { return login; }
+            set { login = value; }
+        }
 
         /**
          * 
          */
-        public List<TipoEvento> EventosFornecidos;
+        public string Senha
+        {
+            get { return senha; }
+            set { senha = value; }
 
         /**
          * 
          */
-        public string Login;
+        public bool IsPrestadorServico
+        {
+            get { return isPrestadorServico; }
+            set { isPrestadorServico = value; }
+        }
+           
+        
 
         /**
          * 
          */
-        public string Senha;
+        public List<Feedback> ReceberFeedback
+        {
+            get { return receberFeedback; }
+            set { receberFeedback = value; }
+        }
 
         /**
          * 
          */
-        public bool IsPrestadorServico;
-
-        /**
-         * 
-         */
-        public List<Feedback> ReceberFeedback;
-
-        /**
-         * 
-         */
-        public List<ListaPresentes> ReceberListaPresentes;
-
-
-
-
+        public List<ListaPresentes> ReceberListaPresentes
+        {
+            get { return receberListaPresentes; }
+            set { receberListaPresentes = value; }
+        }
     }
 }
