@@ -174,9 +174,10 @@ using System.Text;
             get { return senha; }
             set { senha = value; }
 
-        /**
-         * 
-         */
+            /**
+             * 
+             */
+        }
         public bool IsPrestadorServico
         {
             get { return isPrestadorServico; }
