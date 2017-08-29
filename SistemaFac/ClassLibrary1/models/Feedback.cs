@@ -4,28 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/**
- * @author EMESON SANTOS
- */
-public class Feedback {
+namespace Model.Models {
+    public class Feedback
+    {
+        private int id;
+        private string texfeedback;
 
-    /**
-     * 
-     */
-    public Feedback() {
+        public Feedback(int id, string texfeedback)
+        {
+            this.id = id;
+            this.texfeedback = texfeedback;
+        }
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        
+        public string TextFeedback
+        {
+            get { return TextFeedback; }
+            set { TextFeedback = value; }
+        }
+
+
+
+
     }
-
-    /**
-     * 
-     */
-    public int Id;
-
-    /**
-     * 
-     */
-    public string TextFeedback;
-
-
-
-
 }

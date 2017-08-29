@@ -4,31 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/**
- * @author EMESON SANTOS
- */
-    namespace Model.models
+namespace Model.models
 {
     public class Destinatario
     {
 
-        /**
-         * 
-         */
         private int id;
         private string email;
 
-
-    
-    public Destinatario( string email = null)
+        public Destinatario(string email, int id)
         {
             this.email = email;
+            this.id = id;
 
         }
-
-        /**
-         * 
-         */
+        
         public int Id
         {
             get { return id; }
@@ -36,10 +26,8 @@ using System.Text;
 
         }
 
-        /**
-         * 
-         */
-        public string Email {
+        public string Email
+        {
             get { return email; }
             set { email = value; }
         }
@@ -47,4 +35,3 @@ using System.Text;
 
     }
 }
-    

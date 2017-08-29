@@ -4,26 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/**
- * @author EMESON SANTOS
- */
-public class Servico {
+namespace Model.Models
+{
 
-    /**
-     * 
-     */
-    public Servico() {
+    public class Servico
+    {
+
+        private int id;
+        private string descricao;
+
+        public Servico(string descricao, int id)
+        {
+            this.id = id;
+            this.descricao = descricao;
+        }
+        
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Descricao
+        {
+            get { return descricao; }
+            set { descricao = value; }
+        }
+
     }
-
-    /**
-     * 
-     */
-    public int Id;
-
-    /**
-     * 
-     */
-    public string Descricao;
-
-
 }
