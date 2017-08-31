@@ -40,11 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Persistencia\RepositorioDestinatario.cs" />
+    <Compile Include="Persistencia\RepositorioFeedback.cs" />
+    <Compile Include="Persistencia\RepositorioServico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistencia\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Model.csproj">
       <Project>{a350e8c5-6331-4114-98ef-95bf15997618}</Project>

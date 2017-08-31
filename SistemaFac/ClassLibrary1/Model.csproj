@@ -40,15 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="models\Convite.cs" />
-    <Compile Include="models\Destinatario.cs" />
-    <Compile Include="models\Empresa.cs" />
-    <Compile Include="models\Feedback.cs" />
-    <Compile Include="models\ItemListaPresentes.cs" />
-    <Compile Include="models\ListaPresentes.cs" />
-    <Compile Include="models\Servico.cs" />
-    <Compile Include="models\TipoEvento.cs" />
-    <Compile Include="models\Usuario.cs" />
+    <Compile Include="Models\Convite.cs" />
+    <Compile Include="Models\Destinatario.cs" />
+    <Compile Include="Models\Empresa.cs" />
+    <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\ItemListaPresentes.cs" />
+    <Compile Include="Models\ListaPresentes.cs" />
+    <Compile Include="Models\Servico.cs" />
+    <Compile Include="Models\TipoEvento.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
