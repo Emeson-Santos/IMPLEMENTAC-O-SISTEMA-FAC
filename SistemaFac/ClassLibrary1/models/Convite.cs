@@ -6,7 +6,6 @@ using System.Text;
 
 namespace Model.Models
 {
-
     public class Convite
     {
 
