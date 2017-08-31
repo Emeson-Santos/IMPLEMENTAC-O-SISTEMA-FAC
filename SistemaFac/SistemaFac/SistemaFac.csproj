@@ -205,15 +205,15 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Model.csproj">
+    <ProjectReference Include="..\Model\Model.csproj">
       <Project>{a350e8c5-6331-4114-98ef-95bf15997618}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary2\Negocio.csproj">
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
       <Project>{69693193-5ada-4977-94f4-118880b29597}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary3\Persistencia.csproj">
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
       <Project>{9b0f0159-3c62-4460-9e7a-3e212163ada4}</Project>
       <Name>Persistencia</Name>
     </ProjectReference>

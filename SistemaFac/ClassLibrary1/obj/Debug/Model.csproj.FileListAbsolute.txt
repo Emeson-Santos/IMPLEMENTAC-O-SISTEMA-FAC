@@ -1,5 +1,0 @@
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary1\obj\Debug\Model.csprojResolveAssemblyReference.cache
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

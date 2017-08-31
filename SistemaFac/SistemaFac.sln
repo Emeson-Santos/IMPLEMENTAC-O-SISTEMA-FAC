@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaFac", "SistemaFac\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaFac.Testes", "SistemaFac.Testes\SistemaFac.Testes.csproj", "{F40E99E6-45CF-4385-AB9D-0B9D6C428487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "ClassLibrary1\Model.csproj", "{A350E8C5-6331-4114-98EF-95BF15997618}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{A350E8C5-6331-4114-98EF-95BF15997618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "ClassLibrary2\Negocio.csproj", "{69693193-5ADA-4977-94F4-118880B29597}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{69693193-5ADA-4977-94F4-118880B29597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "ClassLibrary3\Persistencia.csproj", "{9B0F0159-3C62-4460-9E7A-3E212163ADA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{9B0F0159-3C62-4460-9E7A-3E212163ADA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
