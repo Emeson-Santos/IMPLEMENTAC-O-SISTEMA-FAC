@@ -1,2 +1,7 @@
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\ClassLibrary3\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
-C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\bin\Debug\Model.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\bin\Debug\Model.pdb
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Persistencia\obj\Debug\Persistencia.pdb

@@ -43,6 +43,7 @@
     <Compile Include="Models\Convite.cs" />
     <Compile Include="Models\Destinatario.cs" />
     <Compile Include="Models\Empresa.cs" />
+    <Compile Include="Models\Exceptions\NegocioException.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\ItemListaPresentes.cs" />
     <Compile Include="Models\ListaPresentes.cs" />

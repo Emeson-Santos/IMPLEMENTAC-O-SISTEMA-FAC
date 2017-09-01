@@ -7,11 +7,11 @@ using Model.Models;
 
 namespace Persistencia.Persistence
 {
-   public class repositorioUsuarios
+   public class RepositorioUsuarios
     {
         private static List<Usuario> listaUsuario;
 
-        static repositorioUsuarios()
+        static RepositorioUsuarios()
         {
             listaUsuario = new List<Usuario>();
         }

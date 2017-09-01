@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\GerenciadorConvite.cs" />
     <Compile Include="Business\GerenciadorDestinatario.cs" />
+    <Compile Include="Business\GerenciadorEmpresa.cs" />
     <Compile Include="Business\GerenciadorFeedback.cs" />
+    <Compile Include="Business\GerenciadorItemListaPresentes.cs" />
+    <Compile Include="Business\GerenciadorListaPresentes.cs" />
     <Compile Include="Business\GerenciadorServico.cs" />
+    <Compile Include="Business\GerenciadorTipoEventos.cs" />
+    <Compile Include="Business\GerenciadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

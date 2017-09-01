@@ -4,19 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model.Models;
-
-
+using Persistencia.Persistence;
 
 namespace Negocio.Business
 {
-    class GerenciadorConvite
+    public class GerenciadorConvite
     {
-        private repositorioConvite persistencia;
+        private RepositorioConvite persistencia;
 
         public GerenciadorConvite()
         {
-            persistencia = new repositorioConvite();
+            persistencia = new Persistencia.Persistence.RepositorioConvite();
         }
+
+        public Convite Adicionar(Convite convite)
+        {
+            persistencia.Adicionar(convite);
+            return convite;
+        }
+
+      
 
     }
 }

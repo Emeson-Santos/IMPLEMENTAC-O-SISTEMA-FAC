@@ -40,17 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Persistencia\RepositorioConvite.cs" />
     <Compile Include="Persistencia\RepositorioDestinatario.cs" />
+    <Compile Include="Persistencia\RepositorioEmpresa.cs" />
     <Compile Include="Persistencia\RepositorioFeedback.cs" />
+    <Compile Include="Persistencia\RepositorioItemListaPresentes.cs" />
+    <Compile Include="Persistencia\RepositorioListaPresente.cs" />
     <Compile Include="Persistencia\RepositorioServico.cs" />
+    <Compile Include="Persistencia\RepositorioTipoEvento.cs" />
+    <Compile Include="Persistencia\RepositorioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{a350e8c5-6331-4114-98ef-95bf15997618}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

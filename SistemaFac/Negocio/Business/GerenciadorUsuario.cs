@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using Model.Models;
+using Model.Models.Exceptions;
 using Persistencia.Persistence;
 
 namespace Negocio.Business
 {
   public  class GerenciadorUsuario
     {
-        private repositorioUsuarios persistencia;
+        private RepositorioUsuarios persistencia;
 
         public GerenciadorUsuario()
         {
-            persistencia = new repositorioUsuarios();
+            persistencia = new RepositorioUsuarios();
         }
 
         public Usuario  Adicionar(Usuario usuario)
@@ -22,7 +23,14 @@ namespace Negocio.Business
 
         public void Editar(Usuario usuario)
         {
-            persistencia.editar(usuario);
+           /* try
+            {
+                persistencia.editar(usuario);
+            }
+            catch(NegocioException negocioExcep)
+            {                
+                throw new NegocioException("Falha ao editar Usuario");                
+            }*/
         }
 
         public void Remover(Usuario usuario)
@@ -30,7 +38,7 @@ namespace Negocio.Business
             persistencia.remover(usuario);
         }
 
-        public Usuario Obter(int id)
+        public Usuario Obter(int? id)
         {
             return persistencia.Obter(u => u.Id == id);
         }

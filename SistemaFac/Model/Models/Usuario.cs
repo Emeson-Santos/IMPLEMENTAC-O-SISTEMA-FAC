@@ -6,10 +6,8 @@ using System.Text;
 
 namespace Model.Models
 {
-
     public class Usuario
     {
-
         private int id;
         private string nome;
         private string rua;
@@ -34,14 +32,17 @@ namespace Model.Models
             this.nome = nome;
             this.id = id;
         }
+
         public Usuario(string nome)
         {
             this.nome = nome;
         }
+
         public Usuario() : this(0, null)
-        {
-        }
-       
+        { }
+
+        #region Propriedades
+
         public int Id
         {
             get { return id; }
@@ -71,6 +72,7 @@ namespace Model.Models
             get { return bairro; }
             set { bairro = value; }
         }
+
         public DateTime DataNascimento
         {
             get { return datanascimento; }
@@ -106,7 +108,6 @@ namespace Model.Models
             get { return numero; }
             set { numero = value; }
         }
-
 
         public string UF
         {
@@ -149,6 +150,7 @@ namespace Model.Models
             set { enviarlistapresentes = value; }
         }
 
+        # endregion
 
 
 

@@ -7,18 +7,18 @@ using Model.Models;
 
 namespace Persistencia.Persistence
 {
-    class repositorioConvite
+    public class RepositorioConvite
     {
         private static List<Convite> ListaConvite;
 
-        static repositorioConvite()
+        static RepositorioConvite()
         {
             ListaConvite = new List<Convite>();
         }
 
-        public Convite Adicionar ( Convite convite)
+        public Convite Adicionar (Convite convite)
         {
-            convite.Confirmado = ListaConvite;
+            
             ListaConvite.Add(convite);
             return convite;
         }
