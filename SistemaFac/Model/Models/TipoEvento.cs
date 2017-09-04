@@ -1,7 +1,6 @@
 
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model.Models
 {
@@ -18,8 +17,15 @@ namespace Model.Models
             this.Descricao = descricao;
             this.ServicosAssociados = servicosAssociados;
         }
+
+        public TipoEvento()
+        {
+            this.Id = id;
+            this.Descricao = descricao;
+            this.ServicosAssociados = servicosAssociados;
+        }
+
         [Key]
-        [Column(Order =1)]
         public int Id
         {
             get { return id; }
@@ -33,6 +39,7 @@ namespace Model.Models
           get { return descricao; }
           set { descricao = value; }
         }
+
         public List<Servico> ServicosAssociados
         {
             get { return servicosAssociados; }

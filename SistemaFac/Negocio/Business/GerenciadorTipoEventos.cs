@@ -18,16 +18,16 @@ namespace Negocio.Business
         {
             persistencia.Adicionar(tipoevento);
             return tipoevento;
+        }   
+
+        public void Editar(TipoEvento tipoevento)
+        {
+            persistencia.Editar(tipoevento);
         }
 
         public List<Servico> ObterTodos(int id)
         {
             throw new NotImplementedException();
-        }
-
-        public void Editar(TipoEvento tipoevento)
-        {
-            persistencia.Editar(tipoevento);
         }
 
         public void Remover(TipoEvento tipoevento)
