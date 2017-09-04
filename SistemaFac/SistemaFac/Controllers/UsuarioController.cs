@@ -92,7 +92,7 @@ namespace BibliotecaWeb.Controllers
                 if (usuario != null)
                     return View(usuario);
             }
-            return RedirectToAction("ListagemUsuarios");
+            return RedirectToAction("Index");
         }
 
         // POST: Usuario/Delete/5
@@ -102,20 +102,20 @@ namespace BibliotecaWeb.Controllers
             try
             {
                 gerenciador.Remover(usuario);
-                return RedirectToAction("ListagemUsuarios");
+                return RedirectToAction("Index");
             }
             catch
             {
 
             }
-            return RedirectToAction("usuario");
+            return RedirectToAction("Usuario");
         }
-        public ActionResult ListagemUsuarios()
+       /* public ActionResult ListagemUsuarios()
         {
             List<Usuario> usuarios = gerenciador.ObterTodos();
             if (usuarios == null || usuarios.Count == 0)
                 usuarios = null;
             return View(usuarios);
-        }
+        }*/
     }
 }
