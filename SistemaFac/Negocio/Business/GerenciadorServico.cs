@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Model.Models;
 using Percistencia.Persistencia;
 
-namespace Negocio.business
+namespace Negocio.Business
 {
     public class GerenciadorServico
     {
@@ -33,7 +33,7 @@ namespace Negocio.business
             persistencia.Remover(servico);
         }
 
-        public Servico Obter(int id)
+        public Servico Obter(int? id)
         {
             return persistencia.Obter(e => e.Id == id);
         }

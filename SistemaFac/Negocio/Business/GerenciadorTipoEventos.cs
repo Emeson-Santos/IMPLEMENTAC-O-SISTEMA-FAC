@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Model.Models;
 using Persistencia.Persistence;
 
@@ -23,6 +20,11 @@ namespace Negocio.Business
             return tipoevento;
         }
 
+        public List<Servico> ObterTodos(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Editar(TipoEvento tipoevento)
         {
             persistencia.Editar(tipoevento);
@@ -33,7 +35,7 @@ namespace Negocio.Business
             persistencia.Remover(tipoevento);
         }
 
-        public TipoEvento Obter(int id)
+        public TipoEvento Obter(int? id)
         {
             return persistencia.Obter(e => e.Id == id);
         }
