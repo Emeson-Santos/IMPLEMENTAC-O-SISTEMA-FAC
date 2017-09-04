@@ -1,6 +1,8 @@
 
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
 
 namespace Model.Models
 {
@@ -13,27 +15,16 @@ namespace Model.Models
 
         public TipoEvento(string descricao =null)
         {
-            this.Id = id;
-            this.Descricao = descricao;
-            this.ServicosAssociados = servicosAssociados;
+            this.Id = Id;
+            this.Descricao = Descricao;
+            this.ServicosAssociados = ServicosAssociados;
         }
-
-        public TipoEvento()
-        {
-            this.Id = id;
-            this.Descricao = descricao;
-            this.ServicosAssociados = servicosAssociados;
-        }
-
-        [Key]
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
-        [Required(ErrorMessage ="Descriçao do tipo de Servico")]
-        [StringLength(1000,ErrorMessage ="Numero Maximoq 1000 de Caracter ")]
-        [Display(Name ="Descrição")]
+
         public string Descricao
         {
           get { return descricao; }
