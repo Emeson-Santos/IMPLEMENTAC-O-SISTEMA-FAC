@@ -22,7 +22,7 @@ namespace Model.Models
         {
             this.Id = id;
             this.Descricao = descricao;
-            this.ServicosAssociados = servicosAssociados;
+            servicosAssociados = new List<Servico>();
         }
 
         [Key]
