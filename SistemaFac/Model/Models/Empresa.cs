@@ -44,6 +44,7 @@ namespace Model.Models
             get { return id; }
             set { id = value; }
         }
+
         
         public string RazaoSocial
         {

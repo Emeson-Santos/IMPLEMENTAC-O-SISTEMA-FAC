@@ -23,11 +23,16 @@ namespace BibliotecaWeb.Controllers
             return View(gerenciador.ObterTodos());
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View();
+            if (id.HasValue)
+            {
+                Usuario usuario = gerenciador.Obter(id);
+                if (usuario != null)
+                    return View(usuario);
+            }
+            return RedirectToAction("Index");
         }
-
         public ActionResult Create()
         {
             return View();
@@ -46,7 +51,7 @@ namespace BibliotecaWeb.Controllers
             }
             catch
             {
-
+                return RedirectToAction("Index");
             }
             return View();
         }
@@ -66,21 +71,25 @@ namespace BibliotecaWeb.Controllers
 
         // POST: Usuario/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, Usuario usuario )//FormCollection collection
+        public ActionResult Edit(Usuario usuario) //FormCollection collection)
         {
             try
             {
-                // TODO: Add update logic here
-                if(ModelState.IsValid)
+                
+                if (ModelState.IsValid)
                 {
-                    gerenciador.Editar(usuario);                    
+                    //Usuario usuario = new Usuario();
+                    //TryUpdateModel<Usuario>(usuario, collection.ToValueProvider());
+                    gerenciador.Editar(usuario);
+                    return RedirectToAction("Index");
                 }
-                return RedirectToAction("Index");
+                
             }
             catch
             {
                 return RedirectToAction("Index");
             }
+            return View();
         }
 
         // GET: Usuario/Delete/5
@@ -106,9 +115,9 @@ namespace BibliotecaWeb.Controllers
             }
             catch
             {
-
+                return RedirectToAction("Usuario");
             }
-            return RedirectToAction("Usuario");
+            
         }
        /* public ActionResult ListagemUsuarios()
         {

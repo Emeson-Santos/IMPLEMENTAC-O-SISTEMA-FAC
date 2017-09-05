@@ -23,14 +23,15 @@ namespace Negocio.Business
 
         public void Editar(Usuario usuario)
         {
-            try
-            {
+            persistencia.editar(usuario);
+            /*try
+           {
                 persistencia.editar(usuario);
             }
-            catch(NegocioException negocioExcep)
-            {                
-                
-            }
+            catch (Exception negicio)
+            {
+
+            }*/
         }
 
         public void Remover(Usuario usuario)

@@ -32,6 +32,7 @@ namespace Persistencia.Persistence
         public void editar(Usuario usuario)
         {
             int posicao = listaUsuario.FindIndex(e => e.Id == usuario.Id);
+          
             listaUsuario[posicao] = usuario;
         }
 
