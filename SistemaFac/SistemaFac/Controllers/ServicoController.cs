@@ -28,6 +28,10 @@ namespace SistemasFAC.Controllers
             }
             return RedirectToAction("Index");
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Create(Servico servico)

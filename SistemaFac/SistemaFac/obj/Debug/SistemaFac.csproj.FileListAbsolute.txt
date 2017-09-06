@@ -1,4 +1,3 @@
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\obj\Debug\SistemaFac.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\ApplicationInsights.config
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\roslyn\csc.exe
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\roslyn\csc.exe.config
@@ -76,5 +75,6 @@ C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\pt-b
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\pt-br\System.Web.WebPages.resources.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\obj\Debug\SistemaFac.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\obj\Debug\SistemaFac.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac\obj\Debug\SistemaFac.pdb

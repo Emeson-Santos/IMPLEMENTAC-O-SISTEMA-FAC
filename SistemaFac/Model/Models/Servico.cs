@@ -13,12 +13,18 @@ namespace Model.Models
         private int id;
         private string descricao;
 
-        public Servico(string descricao, int id)
+        public Servico(int id, string descricao)
         {
             this.id = id;
             this.descricao = descricao;
         }
-        
+        public Servico(string descricao)
+        {
+            this.descricao = descricao;
+        }
+
+        public Servico() : this(0, null) { }
+
         public int Id
         {
             get { return id; }
