@@ -33,7 +33,7 @@ namespace Negocio.Business
             persistencia.Remover(tipoevento);
         }
 
-        public TipoEvento Obter(int id)
+        public TipoEvento Obter(int? id)
         {
             return persistencia.Obter(e => e.Id == id);
         }

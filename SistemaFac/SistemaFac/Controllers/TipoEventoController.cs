@@ -20,13 +20,7 @@ namespace SistemasFAC.Controllers
 
         public ActionResult Index()
         {
-           
-            List<Servico> servicos = gerenciador.ObterTodos(servico.Id);
-            if (servicos==null || servicos.Count==1)
-            {
-                servicos = null;
-            }
-            return View(servicos);
+            return View(gerenciador.ObterTodos());
         }
 
         public ActionResult Create()
@@ -34,11 +28,16 @@ namespace SistemasFAC.Controllers
             ViewBag.ListaDescricao = new SelectList(gerenciador.ObterTodos(), "Descricao");
             return View();
         }
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View();
+            if (id.HasValue)
+            {
+                TipoEvento tipoEvento = gerenciador.Obter(id);
+                if (tipoEvento != null)
+                    return View(tipoEvento);
+            }
+            return RedirectToAction("Index");
         }
-
         [HttpPost]
         public ActionResult Create(TipoEvento tipoevento)
         {
@@ -57,73 +56,67 @@ namespace SistemasFAC.Controllers
             return View();
         }
 
-        // GET: Editora/Edit/5
+        // GET: Usuario/Edit/5
         public ActionResult Edit(int? id)
         {
+
             if (id.HasValue)
             {
-                TipoEvento tipoevento = gerenciador.Obter(id);
-                if (tipoevento != null)
-                {
-                    return View(tipoevento);
-                }
-
+                TipoEvento tipoEvento = gerenciador.Obter(id);
+                return View(tipoEvento);
             }
             return RedirectToAction("Index");
 
-
         }
-
-        // POST: Editora/Edit/5
+        // POST: Usuario/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, TipoEvento tipoevento)
+        public ActionResult Edit(TipoEvento tipoEvento) //FormCollection collection)
         {
             try
             {
 
                 if (ModelState.IsValid)
                 {
-                    gerenciador.Editar(tipoevento);
+                    //Usuario usuario = new Usuario();
+                    //TryUpdateModel<Usuario>(usuario, collection.ToValueProvider());
+                    gerenciador.Editar(tipoEvento);
+                    return RedirectToAction("Index");
                 }
-                return RedirectToAction("Index");
+
             }
             catch
             {
-
-            }
-            return RedirectToAction("Index");
-        }
-
-        // GET: Editora/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id.HasValue)
-            {
-                TipoEvento tipoevento = gerenciador.Obter(id);
-                if (tipoevento != null)
-                {
-                    return View();
-                }
-
-
+                return RedirectToAction("Index");
             }
             return View();
         }
 
-        // POST: Editora/Delete/5
+        // GET: Usuario/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id.HasValue)
+            {
+                TipoEvento tipoEvento = gerenciador.Obter(id);
+                if (tipoEvento != null)
+                    return View(tipoEvento);
+            }
+            return RedirectToAction("Index");
+        }
+
+        // POST: TipoServico/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, TipoEvento tipoevento)
+        public ActionResult Delete(int id, TipoEvento tipoEvento)
         {
             try
             {
-                gerenciador.Remover(tipoevento);
-
+                gerenciador.Remover(tipoEvento);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return RedirectToAction("TipoEvento");
             }
+
         }
 
     }

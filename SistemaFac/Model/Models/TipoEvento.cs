@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -13,13 +14,12 @@ namespace Model.Models
         private string descricao;
         private List<Servico> servicosAssociados;
 
-        public TipoEvento(string descricao =null)
+        public TipoEvento(string descricao = null)
         {
             this.Id = Id;
             this.Descricao = Descricao;
             this.ServicosAssociados = ServicosAssociados;
         }
-<<<<<<< HEAD
 
         public TipoEvento()
         {
@@ -29,8 +29,6 @@ namespace Model.Models
         }
 
         [Key]
-=======
->>>>>>> 5382d3b630b88c912aa1313751501ff80af5fa29
         public int Id
         {
             get { return id; }

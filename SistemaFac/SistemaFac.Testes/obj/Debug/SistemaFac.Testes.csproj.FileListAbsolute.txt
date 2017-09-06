@@ -1,1 +1,2 @@
 C:\Users\Emeson\Desktop\UFS - 2017.1\Engenharia de Software 2\IMPLEMENTACAO SISTEMA FAC\SistemaFac\SistemaFac.Testes\obj\Debug\SistemaFac.Testes.csprojResolveAssemblyReference.cache
+C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\SistemaFac.Testes\obj\Debug\SistemaFac.Testes.csprojResolveAssemblyReference.cache

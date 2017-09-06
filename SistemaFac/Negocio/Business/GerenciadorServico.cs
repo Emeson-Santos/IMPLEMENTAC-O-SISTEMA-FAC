@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Model.Models;
 using Percistencia.Persistencia;
 
-namespace Negocio.business
+namespace Negocio.Business
 {
     public class GerenciadorServico
     {
@@ -41,6 +41,11 @@ namespace Negocio.business
         public List<Servico> ObterTodos()
         {
             return persistencia.ObterTodos();
+        }
+
+        public Servico Obter(int? id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

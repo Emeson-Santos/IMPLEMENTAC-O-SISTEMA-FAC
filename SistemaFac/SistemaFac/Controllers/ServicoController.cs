@@ -18,14 +18,15 @@ namespace SistemasFAC.Controllers
             return View(gerenciador.ObterTodos());
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View();
-        }
-
-        public ActionResult Create()
-        {
-            return View();
+            if (id.HasValue)
+            {
+                Servico servico = gerenciador.Obter(id);
+                if (servico != null)
+                    return View(servico);
+            }
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -80,37 +81,32 @@ namespace SistemasFAC.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET: Editora/Delete/5
+        // GET: Usuario/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id.HasValue)
             {
                 Servico servico = gerenciador.Obter(id);
                 if (servico != null)
-                {
-                    return View();
-                }
-
-
+                    return View(servico);
             }
             return RedirectToAction("Index");
         }
 
-        // POST: Editora/Delete/5
+        // POST: Usuario/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, Servico servico)
         {
             try
             {
                 gerenciador.Remover(servico);
-
                 return RedirectToAction("Index");
             }
             catch
             {
-
+                return RedirectToAction("Servico");
             }
-            return RedirectToAction("Index");
+
         }
     }
 }
