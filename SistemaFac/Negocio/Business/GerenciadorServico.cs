@@ -33,7 +33,7 @@ namespace Negocio.Business
             persistencia.Remover(servico);
         }
 
-        public Servico Obter(int id)
+        public Servico Obter(int? id)
         {
             return persistencia.Obter(e => e.Id == id);
         }
@@ -43,9 +43,5 @@ namespace Negocio.Business
             return persistencia.ObterTodos();
         }
 
-        public Servico Obter(int? id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

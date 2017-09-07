@@ -14,19 +14,20 @@ namespace Model.Models
         private string descricao;
         private List<Servico> servicosAssociados;
 
-        public TipoEvento(string descricao = null)
+        public TipoEvento(int id,string descricao, List<Servico> servicosAssociados)
         {
             this.Id = Id;
             this.Descricao = Descricao;
             this.ServicosAssociados = ServicosAssociados;
         }
 
-        public TipoEvento()
+        public TipoEvento(string descricao)
         {
-            this.Id = id;
             this.Descricao = descricao;
             servicosAssociados = new List<Servico>();
         }
+
+        public TipoEvento() : this(0,null, null) { }
 
         [Key]
         public int Id
