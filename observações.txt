@@ -1,1 +1,10 @@
-asdsdasd
+codigo action link:
+------------------------------------------------------
+ <div>
+        @Html.ActionLink("Cadastro de Usuario", "Create", new { controller = "Usuario" }, new { @class = "btn btn-default" })
+
+        @Html.ActionLink("Cadastro de Tipo de Eventos", "Create", new { controller = "TipoEvento" }, new { @class = "btn btn-default" })
+
+        @Html.ActionLink("Cadastro de tipo de Servisos", "Create", new { controller = "Servico" }, new { @class = "btn btn-default" })
+    </div>
+------------------------------------------------------

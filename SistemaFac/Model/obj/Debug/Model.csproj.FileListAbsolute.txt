@@ -1,4 +1,3 @@
-C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\bin\Debug\Model.dll
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\bin\Debug\Model.pdb
 C:\Users\Emeson\Desktop\IMPLEMENTAC-O-SISTEMA-FAC\SistemaFac\Model\obj\Debug\Model.dll
