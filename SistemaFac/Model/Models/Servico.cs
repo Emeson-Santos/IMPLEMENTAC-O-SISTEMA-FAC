@@ -15,9 +15,20 @@ namespace Model.Models
 
         public Servico(int id, string descricao)
         {
-            this.id = id;
-            this.descricao = descricao;
+            this.Id = id;
+            this.Descricao = descricao;
         }
+<<<<<<< HEAD
+
+        public Servico(string descricao)
+        {
+            this.Descricao = descricao;
+        }
+
+        public Servico() : this(0, null) { }
+        
+        
+=======
         public Servico(string descricao)
         {
             this.descricao = descricao;
@@ -25,6 +36,7 @@ namespace Model.Models
 
         public Servico() : this(0, null) { }
 
+>>>>>>> 5aaaf1e55a285aeeb9aa7d5a1b8e093fe8f45706
         public int Id
         {
             get { return id; }
