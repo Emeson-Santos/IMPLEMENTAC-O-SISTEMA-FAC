@@ -8,3 +8,16 @@ codigo action link:
         @Html.ActionLink("Cadastro de tipo de Servisos", "Create", new { controller = "Servico" }, new { @class = "btn btn-default" })
     </div>
 ------------------------------------------------------
+
+https://www.youtube.com/watch?v=22VmM2OiftQ
+
+------------------------------------------------------
+bootstrap navebar
+
+https://pt.stackoverflow.com/questions/29738/colocar-imagem-num-menu-bootstrap
+
+https://www.w3schools.com/bootstrap/default.asp
+----------------------------------------------------------
+como pagar um item da lista c#
+
+http://www.guj.com.br/t/c-como-pegar-elemento-de-um-list-pelo-index/282527
