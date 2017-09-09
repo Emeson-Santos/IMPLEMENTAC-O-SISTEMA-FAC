@@ -42,9 +42,5 @@ namespace Negocio.Business
         {
             return persistencia.ObterTodos();
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5aaaf1e55a285aeeb9aa7d5a1b8e093fe8f45706
     }
 }
