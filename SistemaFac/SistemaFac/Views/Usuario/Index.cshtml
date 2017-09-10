@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<Model.Models.Usuario>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Lista de Usuario";
 }
 
-<h2>Index</h2>
+<h2>Lista de Usuarios Cadastrados</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Novo Usuario", "Create")
 </p>
+   
 <table class="table">
     <tr>
         <th>
@@ -44,12 +45,12 @@
         <th>
             @Html.DisplayNameFor(model => model.UF)
         </th>
-        <th>
+       <!-- <th>
             @Html.DisplayNameFor(model => model.Login)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Senha)
-        </th>
+        </th>-->
         <th>
             @Html.DisplayNameFor(model => model.QuantConvidadosConf)
         </th>
@@ -91,12 +92,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.UF)
         </td>
-        <td>
+      <!--  <td>
             @Html.DisplayFor(modelItem => item.Login)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Senha)
-        </td>
+        </td>-->
         <td>
             @Html.DisplayFor(modelItem => item.QuantConvidadosConf)
         </td>
