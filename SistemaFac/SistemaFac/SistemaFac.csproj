@@ -158,6 +158,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagens\153644311.jpg" />
+    <Content Include="Imagens\4247d475366e7deacd9623d63793d3a6.jpg" />
+    <Content Include="Imagens\convite-preto-dourado-formatura.jpg" />
+    <Content Include="Imagens\KAZA-FENDI-FESTAS-EVENTOS-SP.jpg" />
+    <Content Include="Imagens\party-themes-for-teenagers-neon-party.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -206,7 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Imagens\" />
     <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
