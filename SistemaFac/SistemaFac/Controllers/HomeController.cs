@@ -15,14 +15,14 @@ namespace SistemaFac.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "APLICATIVO WEB DE CATALOGO DE SERVIÇOS.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "esodegemeos@gmail.com";
 
             return View();
         }

@@ -11,18 +11,19 @@
                 color: white;
                 padding: 50px;               
             }
-            .table
-            {
-                background-color: navajowhite;
-            }
+           
         </style>
 
     </head>
     <body>
-        <h2>LISTA DE SERVIÇOS</h2>
-
+   
+            <h2>LISTA DE SERVIÇOS</h2>
+        
         <p>
-            @Html.ActionLink("Lista de Serviços", "Create")
+            <button>
+                @Html.ActionLink("Novo Serviço", "Create")
+            </button>
+           
         </p>
         <table class="table">
             <tr>
